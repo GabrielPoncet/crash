@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+     <ion-title>Crash Assist - Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating color="primary">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="user.email" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="primary">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"  ></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button block color="primary" (click)="login(user)">Login</button>
+    <button ion-button block color="light" (click)="register()">Registrarse</button>
+    <button ion-button block color="light" >Iniciar sesión con Facebook</button>
+    <button ion-button block color="light" >Iniciar sesión con Google</button>
+  </div>
+
+</ion-content>

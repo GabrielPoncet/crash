@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+     <ion-title>Crash Assist - Registro</ion-title>
+     <ion-buttons end>
+     </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating color="primary">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="user.email" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="primary">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"  ></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <button ion-button (click) = "register(user)" >Registrarse</button>
+  </ion-item>
+</ion-content>

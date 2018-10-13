@@ -1,0 +1,47 @@
+  <div class="menu">
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar color="light">
+      <ion-title>{{user.email}}</ion-title> <br>
+      <ion-title>Plan standard</ion-title>
+      <!-- <label color="white" for="">Plan standard</label> -->
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content>
+    <ion-list>
+      <button ion-item
+          (click)="abrirPagina(home)">
+          Inicio
+        </button>
+
+
+          <button ion-item
+            (click)="abrirPagina(ajustes2)">
+            ¿Cómo funciona?
+            </button>
+
+            <button ion-item
+                (click)="abrirPagina(ajustes)">
+                ¡Mejorar mi plan!
+              </button>
+
+          <button ion-item (click)="abrirPagina(tabs)">
+            Hablar con un asesor
+          </button>
+
+
+        <button ion-item
+            (click)="cerrar()">
+            Cerrar Sesión
+          </button>
+
+    </ion-list>
+
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content></ion-nav>
+</div>

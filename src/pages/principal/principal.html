@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button icon-only
+            menuToggle
+            (click)="mostrarMenu()">
+            <ion-icon name="menu"></ion-icon>
+     </button>
+    <div class="titulo">
+     <ion-title>CRASH ASSIST</ion-title>
+    </div>
+
+     <ion-buttons end>
+     </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding backgroundcolor="primary">
+  <div class="centrado_Btn1">
+      <button ion-button
+          color="primary"
+          (click)="navegarPagina()">
+          Reportar un accidente
+        </button>
+    </div>
+    <div class="centrado_Btn2">
+        <button ion-button
+          color="primary"
+          (click)="navegarNumeros()">
+          Numero de emergencias
+        </button>
+  </div>
+
+  
+
+</ion-content>

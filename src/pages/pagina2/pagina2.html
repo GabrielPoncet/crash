@@ -1,0 +1,69 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Reportar un accidente </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <!-- <ion-list>
+    <ion-item *ngFor="let mutante of mutantes"
+              (click)="irPagina3(mutante)">
+      {{ mutante.nombre }}
+    </ion-item>
+  </ion-list> -->
+<div class="titulo">
+  <p text-center> ¿Qué tipo de accidente tuviste? </p>
+</div>
+
+  <div class="Btn_reporte1">
+    <button ion-button
+        color="primary"
+        block
+        (click)="presentAlert()">
+          Llanta ponchada
+    </button>
+  </div>
+
+  <div class="Btn_reporte2">
+    <button ion-button
+        color="primary"
+        block
+        (click)="irPagina3(choque)">
+          Choque
+    </button>
+  </div>
+
+  <div class="Btn_reporte3">
+    <button ion-button
+        color="primary"
+        block
+        (click)="irPagina3(choques)">
+      Choque con otro coche
+    </button>
+  </div>
+
+  <div class="Btn_reporte4">
+    <button ion-button
+        color="primary"
+        block
+        (click)="irPagina4()">
+      Fallo mecanico
+    </button>
+  </div>
+
+      <ion-title>
+      Tuxta Gutierrez Chiapas
+      </ion-title>
+
+    
+      <ion-content>
+        <div id="map" data-tap-disabled="true"></div>
+      </ion-content>
+
+
+
+
+
+</ion-content>
